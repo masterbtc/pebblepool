@@ -1,4 +1,4 @@
-node-cryptonote-pool
+pebblepool
 ====================
 
 High performance Node.js (with native C addons) mining pool for Boulderhash-based coins such as Pebblecoin.
