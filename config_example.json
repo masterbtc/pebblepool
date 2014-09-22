@@ -49,7 +49,7 @@
             "targetTime": 100,
             "retargetTime": 30,
             "variancePercent": 30,
-            "maxJump": 100
+            "maxJump": 25
         },
         "shareTrust": {
             "enabled": true,
@@ -82,8 +82,8 @@
         "interval": 30,
         "depth": 60,
         "poolFee": 2,
-        "devDonation": 0.1,
-        "coreDevDonation": 0.1
+        "devDonation": 0.0,
+        "coreDevDonation": 0.0
     },
 
     "api": {
@@ -98,7 +98,7 @@
 
     "daemon": {
         "host": "127.0.0.1",
-        "port": 6001
+        "port": 6181
     },
 
     "wallet": {
