@@ -6,6 +6,9 @@
     #networkLastReward{
         text-transform: uppercase;
     }
+    #networkTotalCoins{
+        text-transform: uppercase;
+    }
     #lastHash{
         font-family: 'Inconsolata', monospace;
         font-size: 0.8em;
@@ -91,6 +94,7 @@
         <div><i class="fa fa-unlock-alt"></i> Difficulty: <span id="networkDifficulty"></span></div>
         <div><i class="fa fa-bars"></i> Blockchain Height: <span id="blockchainHeight"></span></div>
         <div><i class="fa fa-money"></i> Last Reward: <span id="networkLastReward"></span></div>
+        <div><i class="fa fa-money"></i> Total Coins: <span id="networkTotalCoins"></span></div>
         <div><i class="fa fa-paw"></i> Last Hash: <a id="lastHash" target="_blank"></a></div>
     </div>
 
@@ -201,6 +205,7 @@
             updateText('networkDifficulty', lastStats.network.difficulty.toString());
             updateText('blockchainHeight', lastStats.network.height.toString());
             updateText('networkLastReward', getReadableCoins(lastStats.network.reward, 4));
+            updateText('networkTotalCoins', getReadableCoins(lastStats.network.already_generated_coins, 4));
             var lastHash = updateText('lastHash', lastStats.network.hash.substr(0, 13) + '...');
             if (blockchainExplorer)
             {
